@@ -1,0 +1,405 @@
+/* -----------base styling---------- */
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url(./assets/fonts/tt-firs/TT\ Firs\ Neue\ Trial\ Var\ Roman.ttf);
+    scr: url(./assets/fonts/aeonik/AeonikTRIAL-Regular.otf);
+}
+
+:root {
+    --text-primary-color: rgba(0, 0, 0, 0.60);
+    --text-primary-font-size: 1.1rem;
+    --text-primary-font-family: "Aeonik", sans-serif;
+    --text-primary-font-weight: 400;
+}
+
+body {
+    font-family: "TT Firs Neue";
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+li {
+    color: var(--text-primary-color);
+    font-family: var(--text-primary-font-family);
+    font-size: var(--text-primary-font-size);
+    list-style: none;
+    font-weight: var(--text-primary-font-weight);
+}
+
+section {
+    padding-top: 100px;
+}
+
+/* -----------base styling---------- */
+
+/* -----------navbar styling---------- */
+.navbar {
+    height: 70px;
+    border-bottom: 1px solid #F0F0F0;
+    background: #FFF;
+}
+
+.navbar .navbar-nav:last-child {
+    display: flex;
+    gap: 8px;
+}
+
+.navbar .navbar-nav:last-child a {
+    border-radius: 100%;
+    background: #E7F0FE;
+    display: grid;
+    place-content: center;
+    padding: 12px;
+}
+
+.navbar .navbar-nav:last-child a:hover {
+    background: #dde5f2;
+}
+
+.navbar .navbar-nav img {
+    width: 16px;
+}
+
+.navbar .collapse ul {
+    gap: 20px;
+}
+
+/* -----------navbar styling---------- */
+
+/* -----------hero styling---------- */
+.hero {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+.hero main {
+    display: grid;
+    place-content: center;
+    background-color: red;
+}
+
+.hero main h1 {
+    max-width: 30rem;
+    color: #000;
+    font-family: "TT Firs Neue";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    display: grid;
+    align-self: center;
+
+    text-align: center;
+}
+
+.hero main p {
+    color: #00000099;
+    max-width: 30rem;
+    text-align: center;
+    display: grid;
+    align-self: center;
+}
+
+.hero .googleplay {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero main .googleplay .badge-1 {
+    width: 170px;
+    height: 50px;
+}
+
+.hero main .googleplay .badge-2 {
+    width: 170px;
+    height: 50px;
+}
+
+
+
+.hero .googleplay img:hover {
+    transform: scale(1.02);
+}
+
+
+.hero main .image img {
+    width: 70px;
+}
+
+.hero .image-1 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.hero .image-2 {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+.hero .image-3 {
+    position: absolute;
+    bottom: 230px;
+    left: 50px;
+}
+
+.hero .image-4 {
+    position: absolute;
+    bottom: 242px;
+    right: 0;
+}
+
+.hero .main p:last-of-type {
+    color: #1C1C1C;
+    font-family: TT Firs Neue;
+    font-weight: 500;
+}
+
+.hero .list-container {
+       display: grid;
+    align-self: center;
+    justify-self: center;
+    background-color: #1C1C1C;
+    width: 100%;
+}
+
+.list-container ul{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: tan;
+gap: 10px;
+width: 100%;
+}
+
+.hero .list-container li {
+    /* 
+    font-family: "TT Firs Neue";
+    padding: 14px 22px;
+    */
+    /* 
+    border-radius: 24px;
+    background: #FAFAFA;  */
+    font-weight: 500;
+    font-size: 20px;
+    /* width: 100%; */
+    color: #1C1C1C;
+    border-radius: 24px;
+    font-style: normal;
+     background: #FAFAFA;
+     margin: 0;
+     padding: 0;
+width: 100%;
+} 
+@media screen and (max-width: 767px) {
+    .hero main .googleplay .badge-1, .badge-2 {
+   /* width: 120px;
+   height: 40px; */
+   width: 100px;
+   height: 40px;
+}
+
+.hero .googleplay {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+/* .hero main .googleplay .badge-2 {
+    width: 170px;
+    height: 50px;
+} */
+
+}
+
+/* -----------hero styling---------- */
+
+/* -----------second-section styling---------- */
+.second-section {
+    /* height: 606px; */
+    background: #FAFAFA;
+}
+
+.second-section .image {
+    display: flex;
+    justify-content: center;
+}
+
+.second-section .image img {
+    /* width: 554px;
+    height: 536px; */
+    border-radius: 24.31px;
+    width: 300px;
+}
+
+/* -----------second-section styling---------- */
+
+/* -----------third-section styling---------- */
+.third-section {
+    /* height: 606px; */
+    background: #FAFAFA;
+    margin-top: 100px;
+}
+
+.third-section .image {
+    display: flex;
+    justify-content: center;
+}
+
+.third-section .image img {
+    /* width: 554px;
+    height: 536px; */
+    border-radius: 24.31px;
+    width: 300px;
+}
+
+/* -----------third-section styling---------- */
+
+/* -----------fourth-section styling---------- */
+.fourth-section {
+    /* height: 606px; */
+    background: #FAFAFA;
+    margin-top: 100px;
+}
+
+.fourth-section .image {
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-section .image img {
+    /* width: 554px;
+    height: 536px; */
+    border-radius: 24.31px;
+    width: 300px;
+}
+
+/* -----------fourth-section styling---------- */
+
+/* -----------fifth-section styling---------- */
+.fifth-section {
+    padding: 50px 0;
+}
+
+.fifth-section img {
+    width: 64px;
+    height: 64px;
+}
+
+.fifth-section .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.fifth-section .card-title {
+    /* width: 398.67px; */
+    font-weight: 500;
+}
+
+.fifth-section .card-text {
+    /* width: 398.67px;
+    font-weight: 700; */
+}
+
+.fifth-section .title p:last-child {
+    width: 30rem;
+}
+
+/* -----------fifth-section styling---------- */
+
+/* -----------sixth-section styling---------- */
+.sixth-section {
+    padding: 50px 0;
+}
+
+.sixth-section img {
+    width: 64px;
+    height: 64px;
+}
+
+.sixth-section .title p:last-child {
+    width: 30rem;
+}
+
+.sixth-section .title h1 {
+    width: 25rem;
+}
+
+.sixth-section .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+.sixth-section .card-title {
+    /* width: 398.67px; */
+    font-weight: 500;
+}
+
+.sixth-section .card-text {
+    /* width: 398.67px;
+    font-weight: 700; */
+}
+
+.sixth-section .control {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    /* justify-content: center; */
+}
+
+/* -----------sixth-section styling---------- */
+
+/* -----------seventh-section styling---------- */
+.seventh-section .container {
+    background-image: url(./assets/seventh-section-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 90px 120px;
+}
+
+.seventh-section .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* justify-content: center;  */
+    /* align-items: center;
+height: 100%;  */
+}
+
+.seventh-section .image-container p {
+    color: #FFF;
+    font-family: "TT Firs Neue";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    width: 549px;
+    line-height: 100%;
+    /* 52px */
+    padding: 50px 0;
+}
+
+.seventh-section img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------seventh-section styling---------- */
